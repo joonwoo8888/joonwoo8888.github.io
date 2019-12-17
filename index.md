@@ -1,6 +1,6 @@
 <!-- 1. OpenShift OKD, Rancher -->
 
-# OpenShift (OKD) vs Rancher 구축및 비교
+# OpenShift (OKD) vs Rancher 구축및 비교(1/3)
 
 
 ## OpenShift (OKD)란?
@@ -123,5 +123,5 @@ systemctl start docker && \
 docker ps -a | awk '{print $1}' | xargs docker start
 ```
 
-## app 빌드&배포등 사용은 Rancher 구축후 비교 예정
+## 빌드&배포는 Rancher 구축후 비교하겠습니다.
 
