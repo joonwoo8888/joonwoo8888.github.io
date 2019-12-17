@@ -126,6 +126,6 @@ docker ps -a | awk '{print $1}' | xargs docker start
 
 
 ## 빌드&배포는 Rancher 구축후 비교하겠습니다.
-https://joonwoo8888.github.io/post/02.md
+
 
 
