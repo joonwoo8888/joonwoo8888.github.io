@@ -123,4 +123,5 @@ systemctl start docker && \
 docker ps -a | awk '{print $1}' | xargs docker start
 ```
 
+## app 빌드&배포등 사용은 Rancher 구축후 비교 예정
 
