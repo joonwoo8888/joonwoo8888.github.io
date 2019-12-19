@@ -100,6 +100,21 @@ https://<ip>:8443/console
 ```
 
 
+## 화면
+
+### 카탈로그 화면)
+![](/image/2019-12-19_09h33_27.png)
+
+
+
+
+
+
+
+
+
+
+
 ### 참고자료
 
 https://docs.okd.io/latest/getting_started/administrators.html
