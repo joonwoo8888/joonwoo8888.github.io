@@ -1,11 +1,11 @@
 ---
 layout: list
 title: Tech
-slug: Tech
+slug: tech
 menu: true
 submenu: true
 order: 8
 description: >
-  기술블로그
+  기술 블로그
 
 ---

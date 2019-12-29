@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Sample
-slug: sample
+title: Jekyll
+slug: jekyll
 category: projects
 menu: false
 order: 1

@@ -1,10 +1,10 @@
 ---
 layout: list
 title: Projects
-slug: Projects
+slug: projects
 menu: true
 submenu: true
 order: 7
 description: >
-  어플리케이션의 문서
+  프로젝트 블로그
 ---
