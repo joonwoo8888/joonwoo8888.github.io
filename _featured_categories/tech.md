@@ -1,11 +1,11 @@
 ---
 layout: list
-title: Devlog
-slug: devlog
+title: Tech
+slug: Tech
 menu: true
 submenu: true
 order: 8
 description: >
-  개발과 관련된 글
+  기술블로그
 
 ---

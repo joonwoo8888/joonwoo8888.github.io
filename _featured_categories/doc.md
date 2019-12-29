@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Documents
-slug: doc
+title: Projects
+slug: Projects
 menu: true
 submenu: true
 order: 7
