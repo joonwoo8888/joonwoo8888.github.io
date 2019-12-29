@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Tech/Rancher] Rancher 설치 해보기"
-subtitle:   "[Tech/Rancher] Rancher 설치 해보기"
+title:  "[Tech] Rancher 설치 해보기"
+subtitle:   "[Tech] Rancher 설치 해보기"
 categories: Tech
 tags: Rancher
 ---

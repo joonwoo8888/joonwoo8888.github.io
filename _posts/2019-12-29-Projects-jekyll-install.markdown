@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Jekyll/github page 블로그 만들기"
-subtitle:   "Jekyll/github page 블로그 만들기"
+title:  "[Projects] Jekyll/github page 블로그 만들기"
+subtitle:   "[Projects] Jekyll/github page 블로그 만들기"
 categories: Projects
 tags: Jekyll
 ---

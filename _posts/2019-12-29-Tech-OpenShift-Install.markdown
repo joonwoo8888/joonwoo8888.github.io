@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "OpenShift 설치 해보기"
-subtitle:   "OpenShift 설치 해보기"
+title:  "[Tech] OpenShift 설치 해보기"
+subtitle:   "[Tech] OpenShift 설치 해보기"
 categories: Tech
 tags: OpenShift
 ---
