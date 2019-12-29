@@ -1,10 +1,10 @@
 ---
 layout: list
 title: Projects
-slug: projects
+slug: Projects
 menu: true
 submenu: true
-order: 7
+order: 2
 description: >
-  프로젝트 블로그
+  미니 프로젝트를 소개하는 블로그
 ---
