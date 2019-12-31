@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Rancher
-slug: Rancher
+title: Kubernetes
+slug: Kubernetes
 category: Tech
 menu: false
 order: 1
