@@ -8,7 +8,7 @@ isme2n:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             | 
-    사람들이 왜 새로운 아이디어를 겁내는지 모르겠다. |
+    사람들이 왜 새로운 아이디어를 겁내는지 모르겠다. <br />
     나는 오래된 것들이 더 무섭다.
     
   # This photo will be used in the about section
