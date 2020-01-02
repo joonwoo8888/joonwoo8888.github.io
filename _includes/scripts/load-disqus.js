@@ -29,7 +29,7 @@
 
   if (!w._disqusLoading) {
     w._disqusLoading = true;
-
+    
     loadJSDeferred('//{{ site.disqus_shortname }}.disqus.com/embed.js');
 
     // add event listener
