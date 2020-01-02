@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "[Tech] Kubernetes 인증서 만들기"
+subtitle:   "[Tech] Kubernetes 인증서 만들기"
+categories: Tech
+tags: Kubernetes
+---
+
 # Kubernetes 인증서 만들기
 
 쿠버네티스 웹UI 대시보드를 외부에서 접근하기위해 인증서를 만들기로 함.
