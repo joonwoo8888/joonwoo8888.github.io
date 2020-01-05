@@ -21,7 +21,7 @@ tags: Kubernetes
 ```
 쿠버네티스 1.16 부터 extensions/v1beta1, apps/v1beta1, apps/v1beta2  버전은 deprecation 되었다.
 
-사용하면안되는것이다. 현재 버전이 1.18도 나온 만큼 버전을 확인하고 사용해야될거같다.
+현재 버전이 1.18도 나온 만큼 버전을 확인하고 사용해야될거같다.
 
 | Kind | apiVersion |
 |---|:---:|
