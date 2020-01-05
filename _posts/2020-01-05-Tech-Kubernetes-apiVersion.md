@@ -24,7 +24,7 @@ tags: Kubernetes
 사용하면안되는것이다. 현재 버전이 1.18도 나온 만큼 버전을 확인하고 사용해야될거같다.
 
 | Kind | apiVersion |
-|—-|:—-:|
+|---|:---:|
 | CertificateSigningRequest | certificates.k8s.io/v1beta1 |
 | ClusterRoleBinding | rbac.authorization.k8s.io/v1 |
 | ComponentStatus | v1 |
