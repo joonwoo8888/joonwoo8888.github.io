@@ -23,6 +23,7 @@
 
   w._loaded = false;
   w.loadJSDeferred = function(src, cb) {
+    this.console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>', src)
     function loadJS() {
       w._loaded = true;
 
