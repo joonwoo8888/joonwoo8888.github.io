@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Tech] apiVersion ??"
-subtitle:   "[Tech] apiVersion ??"
+title:  "[Tech] 쿠버네티스 apiVersion ??"
+subtitle:   "[Tech] 쿠버네티스 apiVersion ??"
 categories: Tech
 tags: Kubernetes
 ---
@@ -21,10 +21,41 @@ tags: Kubernetes
 ```
 쿠버네티스 1.16 부터 extensions/v1beta1, apps/v1beta1, apps/v1beta2  버전은 deprecation 되었다.
 
-언제 사라질지 모르는 버전이였다. 현재 버전이 1.18도 나온 만큼 확인하고 사용해야될거같다.
+사용하면안되는것이다. 현재 버전이 1.18도 나온 만큼 버전을 확인하고 사용해야될거같다.
 
-[Which apiVersion should I use?](https://www.notion.so/00a9171da3a64d5b8461ff6b3bd2d0b7)
-
+| Kind | apiVersion |
+|—-|:—-:|
+| CertificateSigningRequest | certificates.k8s.io/v1beta1 |
+| ClusterRoleBinding | rbac.authorization.k8s.io/v1 |
+| ComponentStatus | v1 |
+| ConfigMap | v1 |
+| ControllerRevision | apps/v1 |
+| CronJob | v1 |
+| Deployment | v1 |
+| Endpoints | v1 |
+| Event | v1 |
+| HorizontalPodAutoscaler | autoscaling/v1 |
+| Ingress | v1 |
+| Job | v1 |
+| LimitRange | v1 |
+| NetworkPolicy | v1 |
+| Node | v1 |
+| PersistentVolumeClaim | v1 |
+| PersistentVolume | v1 |
+| PodDisruptionBudget | policy/v1beta1 |
+| Pod | v1 |
+| PodSecurityPolicy | v1 |
+| PodTemplate | v1 |
+| ReplicaSet | v1 |
+| ReplicationController | v1 |
+| ResourceQuota | v1 |
+| RoleBinding | rbac.authorization.k8s.io/v1 |
+| Role | rbac.authorization.k8s.io/v1 |
+| Secret | v1 |
+| ServiceAccount | v1 |
+| Service | v1 |
+| StatefulSet | apps/v1 |
+| Secret | v1 |
 dprecation 된 apiverison은 v1으로 수정하였다. 
 
 설치된 쿠버네티스 버전을 확인은 아래 명령어를 입력해보면된다.
