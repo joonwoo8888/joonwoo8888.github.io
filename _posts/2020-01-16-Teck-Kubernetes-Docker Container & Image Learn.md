@@ -18,7 +18,7 @@ Centos에서 yum으로 docker를 설치하게 되면  도커홈의 경로는 /va
 
 어떤 파일들이 있는지 확인해보겠습니다.
 
-![/assets/img/2020-01-16-Teck-Kubernetes-Docker%20Container%20&%20Image%20Learn/Untitled.png](Untitled/Untitled.png)
+![/assets/img/2020-01-16-Teck-Kubernetes-Docker%20Container%20&%20Image%20Learn/Untitled.png](/assets/img/2020-01-16-Teck-Kubernetes-Docker%20Container%20&%20Image%20Learn/Untitled.png)
 
 containers: 도커 컨테이너의 정보를 관리
 
@@ -28,11 +28,11 @@ swarm: 비어있음.
 
 containers :컨테이너 아이디의 디렉토리로 구분되어 있는걸 알수있습니다.
 
-![/assets/img/2020-01-16-Teck-Kubernetes-Docker%20Container%20&%20Image%20Learn/Untitled%201.png](Untitled/Untitled%201.png)
+![/assets/img/2020-01-16-Teck-Kubernetes-Docker%20Container%20&%20Image%20Learn/Untitled%201.png](/assets/img/2020-01-16-Teck-Kubernetes-Docker%20Container%20&%20Image%20Learn/Untitled%201.png)
 
 컨테이너를 조회하니 구성 파일과 마운트 디렉토리가 보입니다.
 
-![/assets/img/2020-01-16-Teck-Kubernetes-Docker%20Container%20&%20Image%20Learn/Untitled%202.png](Untitled/Untitled%202.png)
+![/assets/img/2020-01-16-Teck-Kubernetes-Docker%20Container%20&%20Image%20Learn/Untitled%202.png](/assets/img/2020-01-16-Teck-Kubernetes-Docker%20Container%20&%20Image%20Learn/Untitled%202.png)
 
 /var/lib/docker은 도커의 컨테이너&이미지&볼륨등 모든 정보를 가지고 있습니다.
 
