@@ -23,39 +23,40 @@ tags: Kubernetes
 
 현재 버전이 1.18도 나온 만큼 버전을 확인하고 사용해야될거같다.
 
-| Kind | apiVersion |
-|--|:--:|
-| CertificateSigningRequest | certificates.k8s.io/v1beta1 |
-| ClusterRoleBinding | rbac.authorization.k8s.io/v1 |
-| ComponentStatus | v1 |
-| ConfigMap | v1 |
-| ControllerRevision | apps/v1 |
-| CronJob | v1 |
-| Deployment | v1 |
-| Endpoints | v1 |
-| Event | v1 |
-| HorizontalPodAutoscaler | autoscaling/v1 |
-| Ingress | v1 |
-| Job | v1 |
-| LimitRange | v1 |
-| NetworkPolicy | v1 |
-| Node | v1 |
-| PersistentVolumeClaim | v1 |
-| PersistentVolume | v1 |
-| PodDisruptionBudget | policy/v1beta1 |
-| Pod | v1 |
-| PodSecurityPolicy | v1 |
-| PodTemplate | v1 |
-| ReplicaSet | v1 |
-| ReplicationController | v1 |
-| ResourceQuota | v1 |
-| RoleBinding | rbac.authorization.k8s.io/v1 |
-| Role | rbac.authorization.k8s.io/v1 |
-| Secret | v1 |
-| ServiceAccount | v1 |
-| Service | v1 |
-| StatefulSet | apps/v1 |
-| Secret | v1 |
+|Kind|apiVersion|
+|:---|:---:|
+|CertificateSigningRequest|certificates.k8s.io/v1beta1|
+|ClusterRoleBinding|rbac.authorization.k8s.io/v1|
+|ComponentStatus|v1|
+|ConfigMap|v1|
+|ControllerRevision|apps/v1|
+|CronJob|v1|
+|Deployment|v1|
+|Endpoints|v1|
+|Event|v1|
+|HorizontalPodAutoscaler|autoscaling/v1|
+|Ingress|v1|
+|Job|v1|
+|LimitRange|v1|
+|NetworkPolicy|v1|
+|Node|v1|
+|PersistentVolumeClaim|v1|
+|PersistentVolume|v1|
+|PodDisruptionBudget|policy/v1beta1|
+|Pod|v1|
+|PodSecurityPolicy|v1|
+|PodTemplate|v1|
+|ReplicaSet|v1|
+|ReplicationController|v1|
+|ResourceQuota|v1|
+|RoleBinding|rbac.authorization.k8s.io/v1|
+|Role|rbac.authorization.k8s.io/v1|
+|Secret|v1|
+|ServiceAccount|v1|
+|Service|v1|
+|StatefulSet|apps/v1|
+|Secret|v1|
+
 dprecation 된 apiverison은 v1으로 수정하였다. 
 
 설치된 쿠버네티스 버전을 확인은 아래 명령어를 입력해보면된다.
