@@ -2,6 +2,7 @@
 layout: post
 title:  "[Projects] Jekyll/github page 블로그 만들기"
 subtitle:   "나도 한다. 블로그"
+description: "목록에서 나오는 설명"
 categories: Projects
 tags: Jekyll
 header-img: "/assets/img/2020-01-16-Teck-Kubernetes-Docker%20Container%20&%20Image%20Learn/Untitled.png"
