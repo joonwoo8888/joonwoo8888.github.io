@@ -56,7 +56,36 @@ tags: Kubernetes
     # 노드3
     sudo hostnamectl set-hostname node3
     
-    
+### [옵션] 방화벽 키고 진행할려면?
+```
+쿠버에서 사용하는 포트 목록
+
+마스터 노드
+INBOUND 6443 TCP
+INBOUND 2379-2380 TCP
+INBOUND 10250 TCP
+INBOUND 10251 TCP
+INBOUND 10252 TCP
+
+  가상네트워크 
+    weave
+       INBOUND 6783 TCP
+       INBOUND 6783 UDP
+       INBOUND 6784 UDP
+
+-----------------------------------------------------
+워커 노드
+INBOUND 10250 TCP
+INBOUND 30000-32767 TCP
+
+-----------------------------------------------------
+HA 클러스터에 사용하는 로드밸런싱 포트
+블로그에서는 26443
+
+```
+- 자세한 내용은 아래 링크 참고
+https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#check-required-ports
+
 
 ### 도커 설치 (전체 노드 동일 작업)
 
