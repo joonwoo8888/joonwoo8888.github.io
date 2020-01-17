@@ -26,12 +26,11 @@ Helm은 Kubernetes 애플리케이션을 설치하고 수명 주기를 관리하
 
 # helm 설치
 
-    curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+    curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh
     chmod 700 get_helm.sh
     ./get_helm.sh
     
     helm version
-    version.BuildInfo{Version:"v3.0.2", GitCommit:"19e47ee3283ae98139d98460de796c1be1e3975f", GitTreeState:"clean", GoVersion:"go1.13.5"}
 
 ### 공식 Chart Repository 등록
 
@@ -46,8 +45,8 @@ Helm은 Kubernetes 애플리케이션을 설치하고 수명 주기를 관리하
 ### Tiller Server POD 배포
 
     kubectl create serviceaccount tiller --namespace kube-system
-    kubectl create clusterrolebinding tiller-admin-binding --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
-    
+    kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
+
     helm init --service-account=tiller
     
     kubectl get pod -n kube-system
