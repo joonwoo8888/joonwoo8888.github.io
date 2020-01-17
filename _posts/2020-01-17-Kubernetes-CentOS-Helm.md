@@ -25,7 +25,8 @@ Helm은 Kubernetes 애플리케이션을 설치하고 수명 주기를 관리하
 - release: 특정 컨피그를 이용해서 실행중인 차트의 인스턴스 입니다.
 
 # helm 설치
-
+    # helm은 .kube/config의 정보를 참조하기때문에 쿠버가 먼저 설치되어 있어야 합니다.
+    
     curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh
     chmod 700 get_helm.sh
     ./get_helm.sh
