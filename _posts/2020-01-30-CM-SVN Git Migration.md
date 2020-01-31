@@ -88,8 +88,8 @@ git svn clone <SVN URL> --no-metadata -A <users.txt 경로> -T <trunk명> -b <br
 
 git branches 생성 하겠습니다.
 
-    for tag in `git branch -r | grep -v tags | grep -v trunk`; do
-      git tag -a -m"Converting SVN Branches" $tag origin/$tag
+    for branch in `git branch -r | grep -v tags`; do
+    git branch -a -m"Converting SVN Branches" $branch $branch
     done
 
 git tags 생성하겠습니다.
