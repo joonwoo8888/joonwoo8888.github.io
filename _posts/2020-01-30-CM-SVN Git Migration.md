@@ -10,18 +10,18 @@ tags: CM
 
 도커로 svn 서버 실행
 
-    docker run -d --name svn-server -p 80:80 -p 3690:3690 elleflorio/svn-server
+    $ docker run -d --name svn-server -p 80:80 -p 3690:3690 elleflorio/svn-server
 
 신규 레파지토리 생성
 
-    docker exec -it svn-server svnadmin create sample
+    $ docker exec -it svn-server svnadmin create sample
 
 또는 컨테이너에 접근하여 생성할 수 있습니다. 파일 타입은 fsfs와 bdb 두가지를 제공하지만 bdb는 deprecate되었습니다. 
 
-    docekr exec -it svn-server sh 
+    $ docekr exec -it svn-server sh 
     
     
-    svnadmin create --fs-type fsfs /home/svn/<레파지토리명>
+    $ svnadmin create --fs-type fsfs /home/svn/<레파지토리명>
 
 레파지토리 권한 설정
 
@@ -36,7 +36,7 @@ vi <레파지토리명>/conf/svnserve.conf
 
 신규 사용자 생성
 
-    docker exec -t svn-server htpasswd -b /etc/subversion/passwd <username> <password>
+    $ docker exec -t svn-server htpasswd -b /etc/subversion/passwd <username> <password>
 
 또는 <레파지토리명>/conf/passwd 경로 직접 사용자명과 비밀번호를 파일에 작성해야합니다.
 
@@ -44,14 +44,14 @@ vi <레파지토리명>/conf/svnserve.conf
 
 trunk, branches, tags 디렉토리 구성하기
 
-    export SVN_EDITOR=vi
-    svn mkdir svn://localhost/<레파지토리명>/trunk --username <사용자 아이디> --password <사용자 비밀번호>
-    svn mkdir svn://localhost/<레파지토리명>/branches --username <사용자 아이디> --password <사용자 비밀번호>
-    svn mkdir svn://localhost/<레파지토리명>/tags --username <사용자 아이디> --password <사용자 비밀번호>
+    $ export SVN_EDITOR=vi
+    $ svn mkdir svn://localhost/<레파지토리명>/trunk --username <사용자 아이디> --password <사용자 비밀번호>
+    $ svn mkdir svn://localhost/<레파지토리명>/branches --username <사용자 아이디> --password <사용자 비밀번호>
+    $ svn mkdir svn://localhost/<레파지토리명>/tags --username <사용자 아이디> --password <사용자 비밀번호>
 
 클라이언트에서 http으로 접근이 필요하여 권한을 부여합니다.
 
-    chown -R svn:www-data <레파지토리명>
+    $ chown -R svn:www-data <레파지토리명>
 
 ### SVN 사용자정보
 
@@ -78,7 +78,7 @@ SVN 레파지토리에서 로컬 Git으로 복사합니다. 옵션정보는 대�
 
 git svn clone <SVN URL> --no-metadata -A <users.txt 경로> -T <trunk명> -b <branches명> -t <tags명> <로컬git경로>
 
-    git svn clone <SVN URL> --no-metadata -A users.txt -T trunk -b branches -t tags ./sample-git
+    $ git svn clone <SVN URL> --no-metadata -A users.txt -T trunk -b branches -t tags ./sample-git
 
 정상적으로 복사되었으면 source tree를 이용하여 확인합니다. 원격 하위에 Subversion이 생성되었고 Branches, Tags가 보입니다. 그리고 히스토리도 정상적으로 보입니다.
 
@@ -88,14 +88,14 @@ git svn clone <SVN URL> --no-metadata -A <users.txt 경로> -T <trunk명> -b <br
 
 git branches 생성 하겠습니다.
 
-    for branch in `git branch -r | grep -v tags`; do
-    git branch -a -m"Converting SVN Branches" $branch $branch
+    $ for branch in `git branch -r | grep "branches/" | sed 's/ branches\///'`; do
+       git branch $branch refs/remotes/$branch
     done
 
 git tags 생성하겠습니다.
 
-    for tag in git branch -r | grep "tags/" | sed 's/ tags\\///'| cut -d'/' -f 3; do
-    git tag -a -m"Converting SVN tags" $tag origin/tags/$tag
+    $ for tag in `git branch -r | grep "tags/" | sed 's/ tags\\///'| cut -d'/' -f 3`; do
+       git tag -a -m "Converting SVN tags" $tag origin/tags/$tag
     done
 
 source tree를 이용하여 확인해보겠습니다.
